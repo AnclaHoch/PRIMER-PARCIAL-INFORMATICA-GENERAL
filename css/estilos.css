@@ -14,7 +14,7 @@ body {
     background-repeat: repeat;
     background-attachment: fixed;
 
-    font-family: "Abel", sans-serif;
+    font-family: "Abel", sans-serif; /* la fuente de google fonts */
     font-weight: 500;
     font-size: 1rem;
     font-style: normal;
@@ -149,7 +149,7 @@ footer {
 }
 
 footer a {
-    text-decoration: none;
+    text-decoration: none; /* le quita el subrayado */
     opacity: 0.8;
 }
 
