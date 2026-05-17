@@ -1,11 +1,11 @@
-/*empiezo el codigo desde lo general a lo particular*/
+/* empiezo el codigo desde lo general a lo particular */
 
 * { 
     color: white;
     box-sizing: border-box;
 }
 
-/*BODY*/
+/* BODY */
 
 body {
     background-image: url(../img/andersonfondo.png);
@@ -28,10 +28,11 @@ body {
     padding-bottom: 5rem;
 }
 
-/*HEADER*/
+/* HEADER */
 
-header, footer{
+header {
     margin: 2rem auto;
+    margin-top: 4rem;
     padding: 4rem;
     text-align: center;
     background-color:  rgb(1, 20, 43);
@@ -42,13 +43,13 @@ header h1 {
     font-family: "Raleway", sans-serif;
     font-size: 2rem;
     font-weight: 700;
-    letter-spacing: 3px;        /* separa las letras para look minimalista */
+    letter-spacing: 3px; /* separa las letras para look minimalista */
     margin: 0 0 0.5rem 0;}
 
 header p {
     font-size: 2rem;
     font-style: italic;
-    opacity: 0.8;               /* levemente transparente para jerarquía visual */
+    opacity: 0.8; /* levemente transparente para jerarquía visual */
     margin: 0;
 }
 
@@ -57,11 +58,11 @@ header p {
 }
 
 nav ul {
-    list-style: none;           /* elimina los puntos de la lista */
+    list-style: none; /* elimina los puntos de la lista */
     padding: 0;
     margin: 0;
-    display: flex;              /* pone los links en fila horizontal */
-    gap: 1rem;                  /* espacio entre cada link */
+    display: flex; /* pone los links en fila horizontal */
+    gap: 1rem; /* espacio entre cada link */
     margin-left: 12rem;
 }
 
@@ -69,14 +70,14 @@ nav a {
     font-weight: 600;
     font-size: 0.9rem;
     letter-spacing: 2px;
-    text-decoration: none;      /* saca el subrayado */
+    text-decoration: none; /* saca el subrayado */
 }
 
 nav a:hover {
-    opacity: 0.6;               /* efecto suave al pasar el mouse */
+    opacity: 0.6; /* efecto suave al pasar el mouse */
 }
 
-/*BLOCKQUOTE*/
+/* BLOCKQUOTE */
 
 blockquote {
     text-align: center;
@@ -91,7 +92,7 @@ blockquote {
     /*background-color: rgb(27, 115, 75);*/
 }
 
-/*main*/
+/* MAIN */
 
 main { 
     margin: 2rem auto;
@@ -102,8 +103,8 @@ main {
 }
 
 article {
-    margin-bottom: 3rem;        /* separa cada sección */
-    line-height: 1.8;           /* interlineado generoso para legibilidad */
+    margin-bottom: 3rem; /* separa cada sección */
+    line-height: 1.8; /* interlineado generoso para legibilidad */
 }
 
 article h2 {
@@ -113,3 +114,45 @@ article h2 {
     margin-bottom: 1rem;
 }
 
+/*article p {} no voy aescribir nada par este elemento*/
+
+/* IMAGENES Y FIGURE */
+
+figure {
+    margin: 1rem 0;
+    text-align: center;
+}
+
+img {
+    max-width: 100%; /* la imagen nunca desborda su contenedor */
+    height: auto;
+    border: 0.5rem solid rgba(255,255,255,0.2); /* borde en la foto*/
+}
+
+/*VIDEO - IFRAME*/
+
+iframe {
+    display: block;
+    margin: 2rem auto; /* centra el video */
+    max-width: 100%;
+}
+
+/* FOOTER */
+
+footer {
+    margin: 2rem;
+    padding: 4rem;
+    text-align: center;
+    background-color:  rgb(1, 20, 43);
+    border-radius: 2rem;
+    margin-bottom: 0.5rem; /* empuja el footer al fondo */
+}
+
+footer a {
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+footer a:hover {
+    opacity: 1;
+}
