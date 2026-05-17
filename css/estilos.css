@@ -114,7 +114,9 @@ article h2 {
     margin-bottom: 1rem;
 }
 
-/*article p {} no voy aescribir nada par este elemento*/
+article p{
+    line-height: 2;
+}
 
 /* IMAGENES Y FIGURE */
 
